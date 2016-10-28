@@ -1,0 +1,317 @@
+.posicion_right
+{
+	width: 13%;
+	position: absolute;
+	padding: 10px;
+}
+
+.posicion_left
+{
+	width: 50%;
+	position: absolute;
+	left: 80%;
+	padding: 10px;
+}
+
+.transparent
+{
+	background-color: rgba(0, 100, 0, 0.45);
+	color: white;
+}
+
+.login_dialog
+{
+	width: 600px;
+	position: absolute;
+	left: 35%;
+	top: 36%;
+	padding: 10px;
+}
+.box
+{
+	border: 1px solid white;
+	background-color: #7BA93D ;
+	box-shadow: 5px 5px 10px #1C1C1C;
+	padding: 15px;
+	width: 800px;
+	margin: 0 auto;
+
+}
+
+.left
+{
+	margin: 0px 50px 0px 50px;
+	padding: 10px;
+}
+
+.right
+{
+	margin: 0px 0px 0px 430px;
+	padding: 10px;
+}
+
+.textleft
+{
+	margin: 6px 50px 0px 50px;
+	padding: 10px;
+}
+
+.textright
+{
+	margin: -44px 0px 0px 430px;
+	padding: 10px;
+}
+
+.radioleft
+{
+	margin: 0px 300px 50px 15px;
+}
+
+.radioright
+{
+	margin: -214px 0px 50px 400px;
+}
+.namebar
+{
+	width: 100%;
+	position: absolute;
+	top: 75%;
+}
+
+.rounded_borders
+{
+	border-radius: 15px;
+}
+
+.title
+{
+	font-family: "Century Gothic", "Arial";
+	font-size: 30;
+	color: white;
+	text-align: center;
+}
+
+.subtitle
+{
+	font-family: "Century Gothic", "Arial";
+	color:  #a8f1e4 ;
+	font-size: 25;
+	text-align: center;
+	margin: 5px;
+}
+
+.text
+{
+	font-family: "Century Gothic", "Arial";
+	font-size: 20;
+	margin: 5px;
+	color:  white ;
+}
+
+.infotext
+{
+	font-family: Arial;
+	font-size: 13;
+	text-align: right;
+	padding-right: 20px;
+	margin: 0px;
+	color: rgb(145, 145, 165);
+}
+
+.floatingtext
+{
+	font-family: Century;
+	font-size: 14;
+	text-align: right;
+	margin: 0px;
+	color: rgb(175, 175, 195);
+	text-shadow: 0px 0px 5px #f7f7f7;
+}
+
+.centered
+{
+	text-align: center;
+}
+
+form button{
+	    	width:125px;
+	    	margin:20px 0px 0px 0px;
+	    	height:40px;
+	    	background: #167705; /* Old browsers */
+		background: -moz-linear-gradient(top, #7CA275 0%, #3F7735 50%, #576F53 51%,#224D1B 61%, #167705 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #7CA275 0%,#3F7735 50%,#576F53 51%,#224D1B 61%,#167705 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #7CA275 0%,#3F7735 50%,#576F53 51%,#224D1B 61%,#0A3802 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7CA275', endColorstr='#0A3802',GradientType=0 ); /* IE6-9 */
+ 		border:1px solid #232323;
+ 		color:#fff;
+ 		box-shadow:0px 2px 0px #000;
+ 		-moz-box-shadow:0px 2px 0px #000;
+ 		-webkit-box-shadow:0px 2px 0px #000;
+ 		border-radius:10px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+	    }
+form button:hover{
+	    	background:#576F53;
+	    }
+form button:active{
+		background:#576F53;
+	}
+
+input[placeholder] {
+	color:  #035013;
+	text-align: center;
+  	padding: 12px 9px;
+  	border: 0;
+	font-size:18px;
+	border-radius: 10px;
+  	background: rgba(255,255,255,0.97);
+}
+select{
+	color: #035013;
+	padding: 12px 12px;
+	border: 0;
+	border-radius: 10px;	
+	font-size:18px;
+	text-align: center;
+  	background:  white ;
+}
+option{
+	color: #035013 ;
+	font-size: 15px;
+}
+
+.transition {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+/*.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20px;
+}*/
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img .text {
+  font-family: 'Open Sans';
+  position: relative;
+  z-index: -1;
+  display: block;
+  bottom: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 10px 0px 0px 80px;
+  -webkit-transform: 0px 0px 1;
+  -moz-transform: 0px 0px 1;
+  -ms-transform: 0px 0px 1;
+  -o-transform: 0px 0px 1;
+  transform: 0px 0px 1;
+  transform: translate(0px, 0px) scale(1);
+  -webkit-transform: translate(0px, 0px) scale(1);
+  -moz-transform: translate(0px, 0px) scale(1);
+  -o-transform: translate(0px, 0px) scale(1);
+  -ms-transform: translate(0px, 0px) scale(1);
+  -webkit-transition: all 0s ease 0s;
+  -moz-transition: all 0s ease 0s;
+  -o-transition: all 0s ease 0s;
+  transition: all 0s ease 0s;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img:hover .img {
+  -webkit-transform: 0px -30px 0.5;
+  -moz-transform: 0px -30px 0.5;
+  -ms-transform: 0px -30px 0.5;
+  -o-transform: 0px -30px 0.5;
+  transform: 0px -30px 0.5;
+  transform: translate(0px, -30px) scale(0.5);
+  -webkit-transform: translate(0px, -30px) scale(0.5);
+  -moz-transform: translate(0px, -30px) scale(0.5);
+  -o-transform: translate(0px, -30px) scale(0.5);
+  -ms-transform: translate(0px, -30px) scale(0.5);
+  border-radius: 100%;
+}
+.div-img:hover .text {
+  -webkit-transform: 0px 0px 2;
+  -moz-transform: 0px 0px 2;
+  -ms-transform: 0px 0px 2;
+  -o-transform: 0px 0px 2;
+  transform: 0px 0px 2;
+  transform: translate(0px, 0px) scale(2);
+  -webkit-transform: translate(0px, 0px) scale(2);
+  -moz-transform: translate(0px, 0px) scale(2);
+  -o-transform: translate(0px, 0px) scale(2);
+  -ms-transform: translate(0px, 0px) scale(2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
