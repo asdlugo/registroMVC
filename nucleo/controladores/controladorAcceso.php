@@ -1,3 +1,3 @@
 <?php
 
-include('../web/vistas/vistaAcceso.php');
+include('vistas/contenido/tipopersona.php');

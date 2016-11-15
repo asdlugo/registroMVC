@@ -1,4 +1,4 @@
 <?php 
 
-include('vistas/index/index.php');
+include('vistas/index/index.html');
 
