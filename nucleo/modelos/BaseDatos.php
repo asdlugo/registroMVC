@@ -15,7 +15,7 @@ private static $bd_contraseña = 'root';
 private static $bd_characterset = 'UTF8';
 private static $bd_puerto = '5432';
 
-protected $bd_nombre = 'runopadb';
+protected $bd_nombre = 'runoppadb';
 protected $conexion;
 protected $consulta;
 protected $filas = array();
@@ -29,7 +29,7 @@ protected function conectar()
 {
     try
     {
-        $this->conexion = new PDO(SELF::$bd_manejador . ':host=' . SELF::$bd_host . '; dbname=' . SELF::$bd_nombre, SELF::$bd_usuario, SELF::$bd_contraseña);
+        $this->conexion = new PDO(SELF::$bd_manejador . ':host=' . SELF::$bd_host . '; dbname=' . $this->bd_nombre, SELF::$bd_usuario, SELF::$bd_contraseña);
         $this->conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->conexion->exec('SET CLIENT_ENCODING TO' . SELF::$bd_characterset);
 

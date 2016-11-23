@@ -1,11 +1,25 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
 
-include('nucleo/modelos/Persona.php');
+require('nucleo/modelos/Persona.php');
 
-$datos = array($_POST);
+$persona = new Persona();
 
-$persona = new Persona;
+$persona->insertar($_POST);
 
-$persona->insertar($datos);
+require('vistas/contenido/persona.php');
 
-include('vistas/contenido/persona.php');
+
+
+/*$datos = array($_POST);
+
+if ($_POST) 
+{
+	$data = array();
+
+	foreach ($_POST as $key => $value)
+	{
+		echo "variable: " . $key . " valor " . $value . '<br>';
+	}
+}*/

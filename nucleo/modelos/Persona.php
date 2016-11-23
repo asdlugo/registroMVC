@@ -1,23 +1,26 @@
 <?php
 
+include_once('nucleo/modelos/BaseDatos.php');
 /**
 * 
 */
 class Persona extends BaseDatos
 {
 
-    private $bd_nombre;
+    protected $bd_nombre;
 
-    public function __construct() {
-        $this->bd_nombre = runoppadb;
+    public function __construct()
+    {
+        $this->bd_nombre = 'runoppadb';
     }
-    
+
     //obtiene todos los registros de la tabla usuarios con consultaSimple
     public function mostrar()
     {
-        $this->consultaSimple();
         $this->consulta = 'SELECT * FROM registro_productor.tbl_persona';
-        if($this->filas > 0){
+        $this->consultaSimple();
+        if($this->filas > 0)
+        {
             return $this->filas;
         }
     }
@@ -26,8 +29,23 @@ class Persona extends BaseDatos
     public function insertar($user = array())
     {
         //consulta parametrizada
-        $this->consulta = 'INSERT INTO registro_productor.tbl_persona (str_nombreusuario, str_contrasenia, bool_acceso, bool_recuperarcontrasenia, int_idrol, int_idpersonaadmin) 
-                           VALUES (:usu, :con, :acc, :rec, :rol, :per)'; 
+        $this->consulta = "INSERT INTO registro_productor.tbl_persona
+            (str_cedularif,
+            date_fechanacimiento,
+            str_primernombre,
+            str_segundonombre,
+            str_primerapellido,
+            str_segundoapellido,
+            int_estadocivil,
+            str_telefonolocal,
+            str_telefonomovil,
+            str_correoelectronico,
+            int_generopersona,
+            int_gradointruccion,
+            bool_viveup,
+            int_tipodocumentoidentidad)
+            VALUES
+            ($llave)";
         //con el segundo parámetro a true hacemos un insert
         $this->consultaDinamica($user, true);
     }
