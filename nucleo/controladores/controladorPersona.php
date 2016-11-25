@@ -2,12 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-require('nucleo/modelos/Persona.php');
-
-$persona = new Persona();
-
-$persona->insertar($_POST);
-
 require('vistas/contenido/persona.php');
 
 

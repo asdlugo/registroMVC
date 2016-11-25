@@ -1,6 +1,6 @@
 <?php
 
-include_once('nucleo/modelos/BaseDatos.php');
+include_once('../modelos/BaseDatos.php');
 /**
 * 
 */
@@ -29,23 +29,29 @@ class Persona extends BaseDatos
     public function insertar($user = array())
     {
         //consulta parametrizada
-        $this->consulta = "INSERT INTO registro_productor.tbl_persona
-            (str_cedularif,
-            date_fechanacimiento,
+        $this->consulta = "INSERT INTO registro_productor.tbl_persona 
+            (int_tipodocumentoidentidad,
+            str_cedularif,
             str_primernombre,
-            str_segundonombre,
             str_primerapellido,
-            str_segundoapellido,
-            int_estadocivil,
-            str_telefonolocal,
-            str_telefonomovil,
             str_correoelectronico,
+            str_telefonomovil,
+            int_estadocivil,
+            date_fechanacimiento,
             int_generopersona,
             int_gradointruccion,
-            bool_viveup,
-            int_tipodocumentoidentidad)
-            VALUES
-            ($llave)";
+            bool_viveup) 
+                       VALUES (:tipo_documento, 
+                                :cedula, 
+                                :nombre, 
+                                :apellido, 
+                                :correo, 
+                                :telefono, 
+                                :edo_civil, 
+                                :fecha_nac, 
+                                :genero, 
+                                :grado_instruccion, 
+                                :vive_up)";
         //con el segundo parámetro a true hacemos un insert
         $this->consultaDinamica($user, true);
     }

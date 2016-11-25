@@ -35,7 +35,12 @@
 	padding: 15px;
 	width: 800px;
 	margin: 0 auto;
+}
 
+.info{
+	margin: 7px 5px 0px 0px !important;
+	float: right;
+	width: 40px;
 }
 
 .left
@@ -99,6 +104,211 @@
 	text-align: center;
 	margin: 5px;
 }
+.campo_center
+{
+	margin: -11.4% 0% 0% 37%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 150%;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+	text-align: center;
+}
+
+.campo_left
+{
+	margin: 0% 0% 0% 0%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 150%;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+	text-align: center;
+}
+
+.campo_right
+{
+	margin: -11.3% 0% 0% 73%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 150%;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+}
+@media screen and (max-width: 1200px) {
+select{
+	color: #035013;
+	width: 10%;
+	height: 50px;
+	padding: 12px 12px;
+	border-radius: 10px;	
+	font-size:2%;
+	text-align: center;
+  	background:  white ;
+}
+input[placeholder] {
+	width: 100%;
+	height: 50px;
+	color:  #035013;
+	text-align: center;
+  	padding: 1% 1%;
+	font-size:2%;
+	border-radius: 10px;
+  	background: rgba(255,255,255,0.97);
+}
+.campo_center
+{
+	margin: -12.3% 0% 0% 37%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+	text-align: center;
+}
+
+.campo_left
+{
+	margin: 0% 0% 0% 0%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+	text-align: center;
+}
+
+.campo_right
+{
+	margin: -12.3% 0% 0% 73%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+}
+}
+@media screen and (max-width: 1000px) {
+select{
+	color: #035013;
+	width: 10%;
+	height: 50px;
+	padding: 12px 12px;
+	border-radius: 10px;	
+	font-size:2%;
+	text-align: center;
+  	background:  white ;
+}
+input[placeholder] {
+	width: 100%;
+	height: 50px;
+	color:  #035013;
+	text-align: center;
+  	padding: 1% 1%;
+	font-size:2%;
+	border-radius: 10px;
+  	background: rgba(255,255,255,0.97);
+}
+.campo_center
+{
+	margin: -14.5% 0% 0% 37%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 16;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+	text-align: center;
+}
+
+.campo_left
+{
+	margin: 0% 0% 0% 0%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 16;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+	text-align: center;
+}
+
+.campo_right
+{
+	margin: -14.5% 0% 0% 73%;
+	font-family: "Century Gothic", "Arial";
+	font-size: 16;
+	color:  white ;
+	padding: 2%;
+	width: 30%;
+}
+}
+@media screen and (max-width: 769px) {
+.campo_center
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+	text-align: center;
+}
+
+.campo_left
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+	text-align: center;
+}
+
+.campo_right
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 300px;
+	text-align: center;
+}
+}
+@media screen and (max-width: 400px) {
+.campo_center
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 200px;
+	text-align: center;
+}
+
+.campo_left
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 200px;
+	text-align: center;
+}
+
+.campo_right
+{
+	margin: 0 auto;
+	font-family: "Century Gothic", "Arial";
+	font-size: 18;
+	color:  white ;
+	padding: 2%;
+	width: 200px;
+	text-align: center;
+}
+}
 
 .text
 {
@@ -158,6 +368,52 @@ form button:active{
 		background:#576F53;
 	}
 
+.button{
+	    	width:125px;
+	    	margin:20px 0px 0px 0px;
+	    	height:40px;
+	    	background: #167705; /* Old browsers */
+		background: -moz-linear-gradient(top, #7CA275 0%, #3F7735 50%, #576F53 51%,#224D1B 61%, #167705 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #7CA275 0%,#3F7735 50%,#576F53 51%,#224D1B 61%,#167705 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #7CA275 0%,#3F7735 50%,#576F53 51%,#224D1B 61%,#0A3802 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7CA275', endColorstr='#0A3802',GradientType=0 ); /* IE6-9 */
+ 		border:1px solid #232323;
+ 		color:#fff;
+ 		box-shadow:0px 2px 0px #000;
+ 		-moz-box-shadow:0px 2px 0px #000;
+ 		-webkit-box-shadow:0px 2px 0px #000;
+ 		border-radius:10px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+	    }
+.button:hover{
+	    	background:#576F53;
+	    }
+.button:active{
+		background:#576F53;
+	}
+#radio
+{
+}
+
+#cedula
+{
+	color:#035013;
+	width:150%; 
+}
+
+input {
+	width: 100%;
+	height: 50px;
+	color:  #035013;
+	text-align: center;
+  	padding: 12px 9px;
+  	border: 0;
+	font-size:18px;
+	border-radius: 10px;
+  	background: rgba(255,255,255,0.97);
+}
+
 input[placeholder] {
 	color:  #035013;
 	text-align: center;
@@ -169,10 +425,11 @@ input[placeholder] {
 }
 select{
 	color: #035013;
-	padding: 12px 12px;
-	border: 0;
+	width: 100%;
+	height: 50px;
+	padding: 1% 1%;
 	border-radius: 10px;	
-	font-size:18px;
+	font-size:2%;
 	text-align: center;
   	background:  white ;
 }
@@ -187,25 +444,17 @@ option{
   -ms-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
 }
-/*.container {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 20px;
-}*/
+
 .div-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 .div-img .img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
   -webkit-transform: 0px 0px 1;
   -moz-transform: 0px 0px 1;
   -ms-transform: 0px 0px 1;
@@ -231,7 +480,7 @@ option{
   z-index: -1;
   display: block;
   bottom: 10px;
-  width: 50%;
+  width: 40%;
   text-align: center;
   margin: 10px 0px 0px 80px;
   -webkit-transform: 0px 0px 1;
@@ -279,39 +528,12 @@ option{
   -ms-transform: translate(0px, 0px) scale(2);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#filtro
+{
+	color:  #035013;
+	font-size:16px;
+  	padding: 0px;
+	width: 105px;
+	height: 35px;
+  	background: rgba(163, 216, 138,0.97);
+}
