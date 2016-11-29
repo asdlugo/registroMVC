@@ -6,7 +6,7 @@
 	<div class="subcolumna subcolumna2 rounded_borders"> 
 		<a href="pef/ayuda.pdf"><img class="info" title="Ayuda" src="../images/info.png"></a>
 		<p class="title subtitulos rounded_borders">Persona Natural</p>
-			<form action="http://localhost/phpcurso/pildorasInformaticas/prueba/recibepost.php" class="centered" method="POST">
+			<form action="http://localhost/registroMVC/index.php?view=persona" class="centered" method="POST">
 				<div class="campo_left">
 					C&eacute;dula
 					<div style="position:absolute;">

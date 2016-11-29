@@ -2,7 +2,20 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-require('vistas/contenido/persona.php');
+
+
+if(isset($_POST["submit"]))
+{
+	require('nucleo/modelos/Persona.php');
+	
+	$persona = new Persona();
+
+	$persona->insertar($_POST);
+	
+}else{
+	require('vistas/contenido/persona.php');
+}
+
 
 
 

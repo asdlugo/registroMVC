@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-	$data = array(
+	/*$data = array(
 		'tipo_documento' 	=> '1' ,
 		'cedula' 			=> '20309251' , 
 		'nombre' 			=> 'aefjsjkd' ,
@@ -13,14 +13,15 @@ ini_set('display_errors', 'On');
 		'fecha_nac' 		=> '2016-11-10' ,
 		'genero' 			=> '1' ,
 		'grado_instruccion' => '1' ,
-		'vive_up' 			=> 'true');
+		'vive_up' 			=> 'true');*/
 	
-	require('../modelos/Persona.php');
+	require('nucleo/modelos/Persona.php');
 
 	$persona = new Persona();
 
-	$persona->insertar($data);
+	$persona->insertar($_POST);
 
+	//include('vistas/index/index.html');
 
 
 

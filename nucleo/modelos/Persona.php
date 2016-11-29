@@ -1,6 +1,6 @@
 <?php
 
-include_once('../modelos/BaseDatos.php');
+include_once('nucleo/modelos/BaseDatos.php');
 /**
 * 
 */
