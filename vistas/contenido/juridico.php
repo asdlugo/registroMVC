@@ -33,8 +33,17 @@
 					<input type="email" placeholder="Correo" name="correo" required>
 					<br><br>
 				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<button type="button" onclick="location.href='../index.php'">Cancelar</button>
+	            	<button type="submit">Siguiente</button>
+    			</div>
 			</div>
-			<fieldset class="fsStyle">
+		</form>		
+	</div>		
+</div>
+<?php include('vistas/general/footer.html') ?>
+<?php include('vistas/general/piepagina.html') ?>
+			<!--fieldset class="fsStyle">
 				<legend class="legendStyle"> Integrantes</legend>
 					<div class="row collapse in" id="demo"></div>
 			</fieldset>
@@ -85,13 +94,4 @@
 					<input type="text" placeholder="Segundo Apellido" name="segundoapellido" required>
 					<br><br>
 				</div>								
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<button type="button" onclick="location.href='../index.php'">Cancelar</button>
-	            	<button type="submit">Siguiente</button>
-    			</div>
-			</div>
-		</form>		
-	</div>		
-</div>
-<?php include('vistas/general/footer.html') ?>
-<?php include('vistas/general/piepagina.html') ?>
+			</div-->

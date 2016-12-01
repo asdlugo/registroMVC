@@ -26,32 +26,33 @@ class Persona extends BaseDatos
     }
 
     //inserta un nuevo usuario
+
     public function insertar($user = array())
     {
         //consulta parametrizada
+        $this->consulta = "
+            INSERT INTO registro_productor.tbl_persona (int_tipodocumentoidentidad, str_cedularif, str_primernombre, str_primerapellido, str_correoelectronico, str_telefonomovil, int_estadocivil, date_fechanacimiento, int_generopersona, int_gradointruccion, bool_viveup) 
+            VALUES (:tipo_documento, :cedula, :nombre, :apellido, :correo, :telefono, :edo_civil, :fecha_nac, :genero, :grado_instruccion, :vive_up)";
+        //con el segundo parámetro a true hacemos un insert
+        $this->consultaDinamica($user, true);
+    }
+
+    public function insertarNatural($user = array())
+    {
+        //consulta parametrizada
+        $this->consulta = "
+            INSERT INTO registro_productor.tbl_persona (int_tipodocumentoidentidad, str_cedularif, str_primernombre, str_primerapellido, str_correoelectronico, str_telefonomovil, int_estadocivil, date_fechanacimiento, int_generopersona, int_gradointruccion, bool_viveup) 
+            VALUES (:tipo_documento, :cedula, :nombre, :apellido, :correo, :telefono, :edo_civil, :fecha_nac, :genero, :grado_instruccion, :vive_up)";
+        //con el segundo parámetro a true hacemos un insert
+        $this->consultaDinamica($user, true);
+    }
+
+    public function insertarJuridico($user = array())
+    {
+        //consulta parametrizada
         $this->consulta = "INSERT INTO registro_productor.tbl_persona 
-            (int_tipodocumentoidentidad,
-            str_cedularif,
-            str_primernombre,
-            str_primerapellido,
-            str_correoelectronico,
-            str_telefonomovil,
-            int_estadocivil,
-            date_fechanacimiento,
-            int_generopersona,
-            int_gradointruccion,
-            bool_viveup) 
-                       VALUES (:tipo_documento, 
-                                :cedula, 
-                                :nombre, 
-                                :apellido, 
-                                :correo, 
-                                :telefono, 
-                                :edo_civil, 
-                                :fecha_nac, 
-                                :genero, 
-                                :grado_instruccion, 
-                                :vive_up)";
+            (int_tipodocumentoidentidad, str_cedularif, str_primernombre, str_telefonomovil, str_correoelectronico) 
+                       VALUES (:tipo_documento, :cedula, :nombre, :telefono, :correo)";
         //con el segundo parámetro a true hacemos un insert
         $this->consultaDinamica($user, true);
     }

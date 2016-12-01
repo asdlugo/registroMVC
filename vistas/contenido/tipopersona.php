@@ -15,13 +15,13 @@ if (isset($_SESSION["userid"]))
   				<div class="row">
   					<div class="col-lg-6">
   						<div class="div-img " >
-					<a href="http://localhost/registroMVC/index.php?view=persona"><img class="img" src="web/imagenes/persona.png" alt="Natural"></a>
+					<a href="http://localhost/registroMVC/index.php?view=Registronatural"><img class="img" src="web/imagenes/persona.png" alt="Natural"></a>
 					<div class="text">Natural</div> 
 					</div>
   					</div>
   					<div class="col-lg-6">
   						<div class="div-img" >
-						<a href="http://localhost/registroMVC/index.php?view=juridico"><img class="img" src="web/imagenes/juridico2.png" title="Juridico" alt="Juridico"></a>
+						<a href="http://localhost/registroMVC/index.php?view=Registrojuridico"><img class="img" src="web/imagenes/juridico2.png" title="Juridico" alt="Juridico"></a>
 						<div class="text">Juridico</div>
 						</div>
   					</div>
