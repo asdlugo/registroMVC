@@ -119,6 +119,16 @@
 	background-color:  #053201;
 }
 
+.subtitulos2 {
+	margin:0 auto;
+	border:2px solid;
+	border-color:#89e5a9;
+	color: white;
+	padding: 5px;
+	width:70%;
+	background-color:  #7c6231;
+}
+
 .natural {
 	color: white;
 	padding: 5px;

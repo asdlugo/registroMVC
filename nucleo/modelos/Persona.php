@@ -39,8 +39,8 @@ class Persona extends BaseDatos
     {
         //consulta parametrizada
         $this->consulta = "
-            INSERT INTO registro_productor.tbl_persona (int_tipodocumentoidentidad, str_cedularif, str_primernombre, str_primerapellido, str_correoelectronico, str_telefonomovil, int_estadocivil, date_fechanacimiento, int_generopersona, int_gradointruccion, bool_viveup) 
-            VALUES (:tipo_documento, :cedula, :nombre, :apellido, :correo, :telefono, :edo_civil, :fecha_nac, :genero, :grado_instruccion, :vive_up)";
+            INSERT INTO registro_productor.tbl_persona (int_tipodocumentoidentidad, str_cedularif, str_primernombre, str_segundonombre, str_primerapellido, str_segundoapellido, str_correoelectronico, str_telefonolocal, str_telefonomovil, int_estadocivil, date_fechanacimiento, int_generopersona, int_gradointruccion) 
+            VALUES (:tipo_documento, :cedula, :nombre, :nombredos, :apellido, :apellidodos, :correo, :local, :celular, :edocivil, :fecha, :genero, :grado_instruccion)";
         //con el segundo parámetro a true hacemos un insert
         $this->consultaDinamica($user, true);
     }

@@ -1,6 +1,7 @@
 <?php 
 error_reporting(E_ALL);
-	ini_set('display_errors', 'On');
+ini_set('display_errors', 'On');
+
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
 	require('nucleo/modelos/Persona.php');
@@ -9,5 +10,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	header("Location: http://localhost/registroMVC/index.php");
 }else
 {
-	require('vistas/contenido/persona.php');
+	require('vistas/persona/persona.php');
 }
