@@ -1,9 +1,7 @@
 <?php
 
 include_once('nucleo/modelos/BaseDatos.php');
-/**
-* 
-*/
+
 class Persona extends BaseDatos
 {
 
