@@ -1,80 +1,53 @@
-<html>
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>RUNOPPA</title>
-	<link rel="shortcut icon" href="../images/icono.png">
-	<link rel="stylesheet" type="text/css" href="../css/mainstyle.css">
-	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
-	<link href="../css/style.css" rel="stylesheet">
-		
-	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src='../js/jquery.min.js'></script>
-	
-
-      <script type="text/javascript">
-$(document).ready(function(){
-    $('.filterable .btn-filter').click(function(){
-        var $panel = $(this).parents('.filterable'),
-        $filters = $panel.find('.filters input'),
-        $tbody = $panel.find('.table tbody');
-        if ($filters.prop('disabled') == true) {
-            $filters.prop('disabled', false);
-            $filters.first().focus();
-        } else {
-            $filters.val('').prop('disabled', true);
-            $tbody.find('.no-result').remove();
-            $tbody.find('tr').show();
-        }
-    });
-
-    $('.filterable .filters input').keyup(function(e){
-        /* Ignore tab key */
-        var code = e.keyCode || e.which;
-        if (code == '9') return;
-        /* Useful DOM data and selectors */
-        var $input = $(this),
-        inputContent = $input.val().toLowerCase(),
-        $panel = $input.parents('.filterable'),
-        column = $panel.find('.filters th').index($input.parents('th')),
-        $table = $panel.find('.table'),
-        $rows = $table.find('tbody tr');
-        /* Dirtiest filter function ever ;) */
-        var $filteredRows = $rows.filter(function(){
-            var value = $(this).find('td').eq(column).text().toLowerCase();
-            return value.indexOf(inputContent) === -1;
-        });
-        /* Clean previous no-result if exist */
-        $table.find('tbody .no-result').remove();
-        /* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
-        $rows.show();
-        $filteredRows.hide();
-        /* Prepend no-result row if all rows are filtered */
-        if ($filteredRows.length === $rows.length) {
-            $table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="'+ $table.find('.filters th').length +'">No se encontraron resultados</td></tr>'));
-        }
-    });
-});
+<?php include("vistas/general/encabezado.html") ?>
+<?php include("vistas/general/header.html") ?>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.filterable .btn-filter').click(function(){
+			var $panel = $(this).parents('.filterable'),
+			$filters = $panel.find('.filters input'),
+			$tbody = $panel.find('.table tbody');
+			if ($filters.prop('disabled') == true) {
+				$filters.prop('disabled', false);
+				$filters.first().focus();
+			} else {
+				$filters.val('').prop('disabled', true);
+				$tbody.find('.no-result').remove();
+				$tbody.find('tr').show();
+			}
+		});
+		$('.filterable .filters input').keyup(function(e){
+			/* Ignore tab key */
+			var code = e.keyCode || e.which;
+			if (code == '9') return;
+			/* Useful DOM data and selectors */
+			var $input = $(this),
+			inputContent = $input.val().toLowerCase(),
+			$panel = $input.parents('.filterable'),
+			column = $panel.find('.filters th').index($input.parents('th')),
+			$table = $panel.find('.table'),
+			$rows = $table.find('tbody tr');
+			/* Dirtiest filter function ever ;) */
+			var $filteredRows = $rows.filter(function(){
+				var value = $(this).find('td').eq(column).text().toLowerCase();
+				return value.indexOf(inputContent) === -1;
+			});
+			/* Clean previous no-result if exist */
+			$table.find('tbody .no-result').remove();
+			/* Show all rows, hide filtered ones (never do that outside of a demo ! xD) */
+			$rows.show();
+			$filteredRows.hide();
+			/* Prepend no-result row if all rows are filtered */
+			if ($filteredRows.length === $rows.length) {
+				$table.find('tbody').prepend($('<tr class="no-result text-center"><td colspan="'+ $table.find('.filters th').length +'">No se encontraron resultados</td></tr>'));
+			}
+		});
+	});
 </script>
-
-</head>
-
-<body>
-
-	<header>
-		<?php include 'general/header_interno.html'?>
-	</header>
-	
-	<div class="container">
-		
-		<div class="subcolumna subcolumna2 rounded_borders centered panel panel-primary filterable"> 
-			<a href="pef/ayuda.pdf"><img class="info" title="Ayuda" src="../images/info.png"></a>
-			<p class="title subtitulos rounded_borders">Unidad de Producci&oacute;n</p>
-			<div class="table-responsive rounded_borders">			
+<div class="container">
+	<div class="subcolumna subcolumna2 rounded_borders centered panel panel-primary filterable"> 
+		<a href="pef/ayuda.pdf"><img class="info" title="Ayuda" src="../images/info.png"></a>
+		<p class="title subtitulos rounded_borders">Unidad de Producci&oacute;n</p>
+		<div class="table-responsive rounded_borders">			
 			<table class="table table-hover table-bordered" >
 				<thead bgcolor=#a3d88a>
 					<tr>					
@@ -96,11 +69,7 @@ $(document).ready(function(){
 					</tr>
 				</thead>
 				<tbody  bgcolor= white>
-				<?php
-					$c=1;
-					while($c<10)
-					{
-				?>				
+					<?php $c=1; while($c<10) { ?>				
 					<tr>
 						<td> <?php echo$c ?> </td>
 						<td>  </td>
@@ -111,15 +80,12 @@ $(document).ready(function(){
 						<td>  </td>
 						<td>  </td>
 						<td> 
-							<a href="rubros.php"><span style="color:black; padding:4px"title="Ver" class="glyphicon glyphicon-eye-open"></span></a>
+							<a href="rubros.php"><span style="color:black; padding:4px" title="Ver" class="glyphicon glyphicon-eye-open"></span></a>
 							<a href="#"><span style="padding:4px" title="Editar" class="glyphicon glyphicon-pencil"></span></a> 
 							<a href="#"><span style="color:red" title="Eliminar" class="glyphicon glyphicon-remove"></span></a>
 						</td>
 					</tr>
-				<?php	
-					$c++;
-					}
-				?>
+					<?php $c++; } ?>
 					<tr>
 						<td> <?php echo$c ?> </td>
 						<td>  </td>
@@ -133,16 +99,12 @@ $(document).ready(function(){
 							<a href="unidad_produccion.php"><span title="Agregar"  class="glyphicon glyphicon-plus-sign"></span></a> 
 						</td>
 					</tr>
-					</tbody>
+				</tbody>
 			</table>
 		</div>
-
-			<input class="button" value="Cancelar" type="button" onclick="location.href='../index.php'">
-    			<input class="button" value="Enviar" type="submit">
-		</div>
+		<input class="button" value="Cancelar" type="button" onclick="location.href='../index.php'">
+		<input class="button" value="Enviar" type="submit">
 	</div>
-
-	<footer>
-		<?php include 'general/footer_interno.html'?>
-	</footer>
-</body>
+</div>
+<?php include('vistas/general/footer.html') ?>
+<?php include('vistas/general/piepagina.html') ?>

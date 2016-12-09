@@ -1,0 +1,139 @@
+
+<?php include("vistas/general/encabezado.html") ?>
+<?php include("vistas/general/header.html") ?>
+<div class="container">
+	
+	<div class="subcolumna subcolumna2 rounded_borders"> 
+		<a href="pef/ayuda.pdf"><img class="info" title="Ayuda" src="web/imagenes/info.png"></a>
+		<p class="title subtitulos rounded_borders">Persona Natural</p>
+		  <div class="panel-body form-horizontal payment-form">
+			<form action="http://localhost/registroMVC/index.php?view=Registronatural" class="centered" method="POST">
+				<div class="campo_left">
+					C&eacute;dula
+					<div style="position:absolute;">
+					<select id="cedula" name="cedula">
+						<option value="1">V</option>
+						<option value="2">E</option>
+					</select>
+					</div>
+					<input type="text" placeholder="C&eacute;dula" name="numcedula" id="numcedula" required>
+				</div>
+				<div class="campo_center" style="">
+					<div>Nombres</div>
+					<input type="text" placeholder="Primer" style="width:48%; font-size:80%;" name="nombre" id="nombre" required>
+					<input type="text" placeholder="Segundo"  style="width:48%; font-size:80%;" name="nombredos" id="nombredos" >
+				</div>
+				<div class="campo_right">
+					<div>Apellidos</div>
+					<input type="text" placeholder="Primer" style="width:48%; font-size:80%;" name="apellido" id="apellido" required>
+					<input type="text" placeholder="Segundo" style="width:48%; font-size:80%;" name="apellidodos" id="apellidodos">
+				</div>
+				<div class="campo_left">
+					Correo
+					<input type="email" placeholder="Correo" name="correo" id="correo" required>
+				</div>
+				<div class="campo_center">
+					Teléfono Local
+					<input type="int" placeholder="Tel&eacute;fono" name="local" id="local" required>
+				</div>
+				<div class="campo_right">
+					Teléfono Celular
+					<input type="text" placeholder="Celular" required name="celular" id="celular">
+				</div>
+				<div class="campo_left">
+					Estado Civil
+					<select placeholder="edocivil" style="color:#035013" name="edocivil" id="edocivil">
+						<option value="0">---   SELECCIONE   ---</option>
+						<option value="1">Soltero</option>
+						<option value="2">Casado</option>
+						<option value="3">Viudo</option>
+						<option value="4">Divorciado</option>
+					</select>
+				</div>
+				<div class="campo_center">
+					Fecha de Nacimiento
+				<input type="date" placeholder="Fecha" name="fecha" id="fecha" required>
+				</div>
+				<div class="campo_right">
+					Género
+					<select  placeholder="genero" style="color:#035013" name="genero" id="genero">
+						<option value="0">---   SELECCIONE   ---</option>
+						<option value="1">Femenino</option>
+						<option value="2">Masculino</option>
+					</select>
+				</div>
+				<div class="campo_left">
+					Grado Instrucci&oacute;n
+					<select  style="color:#035013" name="gradoinstruccion" id="gradoinstruccion">
+						<option value="0">---   SELECCIONE   ---</option>
+						<option value="1">Sin Grado de Instrucci&oacute;n</option>
+						<option value="2">Basica (Sin culminar)</option>
+						<option value="3">Basica (Culminado)</option>
+						<option value="4">Bachillerato (Sin Culminado)</option>
+						<option value="5">Bachillerato (Culminado)</option>
+						<option value="6">TSU (Sin Culminado)</option>
+						<option value="7">TSU (Culminado)</option>
+						<option value="8">Universitario (Sin Culminado)</option>
+						<option value="9">Universitario (Culminado)</option>
+					</select>
+				</div>
+
+			<button type="button" onclick="location.href='../index.php'">Cancelar</button>
+
+                  <button type="button" class="btn btn-default preview-add-button" data-toggle="modal"  data-target="#myModal">
+                                <span class="glyphicon glyphicon-plus"></span> Add
+                            </button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                 <h4 class="modal-title">Modal title</h4>
+
+            </div>
+            <div class="modal-body"><div class="te"></div>
+	    			     
+                <div class="col-xs-12">
+                    <div class="table-responsive">
+                        <table class="table preview-table">
+                            <thead>
+                                 <tr>
+                                    <th>Nacionalidad</th>
+                                    <th>Cedula</th>
+                                    <th>Primer Nombre</th>
+                                    <th>Segundo Nombre</th>
+                                    <th>Primer Apellido</th>
+                                    <th>Segundo Apellido</th>
+                                    <th>correo</th>
+                                    <th>telefono</th>
+                                    <th>telefono celular</th>
+                                    <th>estado civil</th>
+                                    <th>fecha nacimiento</th>
+                                    <th>genero</th>
+                                    <th>grado instruccion</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody> <!-- preview content goes here-->
+                        </table>
+                    </div>                            
+                </div>
+           </div>
+            <div class="modal-footer">
+    <button type="submit">Siguiente </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->	
+			</form>				
+	</div>
+</div>
+</div>
+
+<?php include('vistas/general/footer.html') ?>
+<?php include('vistas/general/piepagina.html') ?>
+

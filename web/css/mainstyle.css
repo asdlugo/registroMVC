@@ -37,10 +37,10 @@
 	margin: 0 auto;
 }
 
-.info{
-	margin: 7px 5px 0px 0px !important;
+.info 
+{
+	margin: 3px 5px 0px 0px !important;
 	float: right;
-	width: 40px;
 }
 
 .left

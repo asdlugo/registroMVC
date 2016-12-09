@@ -13,7 +13,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="div-img" >
-					<a href="http://localhost/registroMVC/index.php?view=registrojuridico.php"><img class="img" src="web/imagenes/log_juridico.jpg"></a>
+					<a href="http://localhost/registroMVC/index.php?view=Registrojuridico"><img class="img" src="web/imagenes/log_juridico.jpg"></a>
 					<div class="text-center" style="color:green">Juridico</div>
 					</div>
 				</div>

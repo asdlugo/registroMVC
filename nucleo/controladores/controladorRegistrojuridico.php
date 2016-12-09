@@ -7,5 +7,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	header("Location: http://localhost/registroMVC/index.php");
 }else
 {
-	require('vistas/contenido/juridico.php');
+	require('vistas/persona/juridico1.php');
 }
