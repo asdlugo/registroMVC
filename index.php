@@ -1,12 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 'On');
+include_once('nucleo/controladores/controladorRouter.php');
 
-if(isset($_GET['view'])) {
-  if(file_exists('nucleo/controladores/controlador' . ucfirst(strtolower($_GET['view'])) . '.php')) {
-    include('nucleo/controladores/controlador' . ucfirst(strtolower($_GET['view'])) . '.php');
-  } else {
-    include('nucleo/controladores/controladorError.php');
-  }
-} else {
-  include('nucleo/controladores/controladorIndex.php');
-}
-
+controladorEnrutador::cargarControlador($_GET['vista']);

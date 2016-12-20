@@ -7,13 +7,13 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="div-img " >
-					<a href="http://localhost/registroMVC/index.php?view=Registronatural"><img class="img" src="web/imagenes/log_natural.jpg"></a>
+					<a href="?vista=Registronatural"><img class="img" src="web/imagenes/log_natural.jpg"></a>
 					<div class="text-center" style="color:green">Natural</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="div-img" >
-					<a href="http://localhost/registroMVC/index.php?view=Registrojuridico"><img class="img" src="web/imagenes/log_juridico.jpg"></a>
+					<a href="?vista=Registrojuridico"><img class="img" src="web/imagenes/log_juridico.jpg"></a>
 					<div class="text-center" style="color:green">Juridico</div>
 					</div>
 				</div>

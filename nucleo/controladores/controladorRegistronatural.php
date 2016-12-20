@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	require('nucleo/modelos/Persona.php');
 	$persona = new Persona();
 	$persona->insertarNatural($_POST);
-	header("Location: http://localhost/registroMVC/index.php");
+	header("Location:?vista=solicitudregistro");
 }else
 {
 	require('vistas/persona/persona.html');
